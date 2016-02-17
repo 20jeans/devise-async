@@ -17,6 +17,7 @@ module Devise
       autoload :QueueClassic, "devise/async/backend/queue_classic"
       autoload :Torquebox,    "devise/async/backend/torquebox"
       autoload :SuckerPunch,  "devise/async/backend/sucker_punch"
+      autoload :Qless,        "devise/async/backend/qless"
       autoload :Que,          "devise/async/backend/que"
     end
 
