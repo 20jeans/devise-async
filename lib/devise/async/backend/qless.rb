@@ -1,4 +1,3 @@
-
 require 'qless'
 module Devise
   module Async
@@ -6,7 +5,7 @@ module Devise
       class Qless < Base
         @queue = Devise::Async.queue
         def self.enqueue(*args)
-          @queue.put(self, *args)
+          @queue.put(self, args)
         end
       end
     end
